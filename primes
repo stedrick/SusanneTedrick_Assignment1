@@ -1,4 +1,4 @@
-//function to count prime numbers
+//function to count prime number
 function PrimeNumber(x){
     var count = 1;
     var num = 2;
@@ -22,11 +22,5 @@ function isPrime(x){
             return false;
     return true;
 }
-//lines to print out prime numbers 1 - 6, and 1000)
-console.log(PrimeNumber(1))
-console.log(PrimeNumber(2))
-console.log(PrimeNumber(3))
-console.log(PrimeNumber(4))
-console.log(PrimeNumber(5))
-console.log(PrimeNumber(6))
+//line to print out 1000th prime number)
 console.log(PrimeNumber(1000))
