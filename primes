@@ -1,0 +1,32 @@
+//function to count prime numbers
+function PrimeNumber(x){
+    var count = 1;
+    var num = 2;
+    while(count++ != x){
+        num = NextPrimeNumber(num);
+    }
+    return num;
+}
+//function to increase prime numbers
+function NextPrimeNumber(x){
+    for(var i = ++x; i < x * x; i++){
+        if(isPrime(i))
+            return i
+    }
+    return 0;
+}
+//function to verify that the number in question is prime
+function isPrime(x){
+    for(var i = 2; i < x; i++)
+        if (x % i ===0)
+            return false;
+    return true;
+}
+//lines to print out prime numbers 1 - 6, and 1000)
+console.log(PrimeNumber(1))
+console.log(PrimeNumber(2))
+console.log(PrimeNumber(3))
+console.log(PrimeNumber(4))
+console.log(PrimeNumber(5))
+console.log(PrimeNumber(6))
+console.log(PrimeNumber(1000))
